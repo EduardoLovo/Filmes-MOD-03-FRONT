@@ -1,5 +1,5 @@
 export const Api = {
-    url: 'http://localhost:3000/filmes',
+    url: 'https://filmes-mod03-backend.herokuapp.com/filmes',
 
     fetchGet: () => fetch(Api.url),
 

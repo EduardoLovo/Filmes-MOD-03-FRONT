@@ -19,15 +19,12 @@ export const FilmeList = () => {
         setFilmes(data);
     }
 
-    console.log(filmes);
-
 
     return (
         <div className='listBody'>
             {filmes.map((filme, index) => (
                 <FilmeCard filme={filme} key={filme._id} />
             ))}
-
         </div>
     )
 }
