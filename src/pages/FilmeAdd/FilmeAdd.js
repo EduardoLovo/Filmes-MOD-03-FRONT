@@ -21,7 +21,7 @@ export const FilmeAdd = (props) => {
 
         try {
             const response = await Api.fetchPost(Filme);
-            const data = response.json()
+            const data = response.text()
             console.log(data);
             props.history.push('/');
         } catch (error) {
@@ -40,9 +40,6 @@ export const FilmeAdd = (props) => {
                 <button type='submit' onClick={notify}>Enviar</button>
                 <ToastContainer />
             </form>
-
-
-
         </section>
     )
 }

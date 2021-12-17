@@ -7,14 +7,11 @@ import { Api } from '../../Api/Api';
 export const FilmeUpdate = (props) => {
     const id = props.match.params.id;
 
-    const [filmeAtualizado, setFilmeAtualizado] = useState({
-        nome: '',
-        img: ''
-    });
+    const [filmeAtualizado, setFilmeAtualizado] = useState([]);
 
     useEffect(() => {
         getFilmeById();
-    })
+    }, [])
 
     const getFilmeById = async () => {
         const response = await Api.fetchGetById(id);
@@ -32,7 +29,7 @@ export const FilmeUpdate = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const result = await Api.fetchPut(filmeAtualizado, id);
-        const response = await result.json();
+        const response = await result.text();
         console.log(response);
     }
 
