@@ -3,63 +3,11 @@ body {
   background-size: cover;
   padding: 0;
   margin: 0;
-}
-
-.container  {
-  text-align: center;
-}
-
-.container h1 {
-  color: wheat;
-  text-align: center;
-}
-
-.listFilmes {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   
 }
 
-.listFilmes li {
-  padding: 20px;
-  text-align: center;
-  list-style: none;
-}
-
-.listFilmes h3 {
-  color: wheat;
-}
-
-.listFilmes img {
-  height: 360px;
-  border-radius: 5px;
-}
-
-/* ================================================ */
-
-.container h2 {
-  color: wheat;
-}
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.formulario input {
-  width: 40%;
-  padding: 0.8em;
-  margin: 0 0 1em 0;
-  border: none;
-  border-radius: 5px;
-}
-
-.formulario button {
-  width: 20%;
-  padding: 0.8em;
-  margin: 0 0 1em 0;
-  border: none;
-  border-radius: 5px;
+.App {
+  height: 100%;
 }
 
 

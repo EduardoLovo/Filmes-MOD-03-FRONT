@@ -1,0 +1,30 @@
+.headerBody {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 5em;
+    margin: 2em;
+}
+
+.imgLink img{
+    width: 7em;
+}
+
+.btnLogin {
+    width: 7em;
+    height: 3em; 
+}
+
+.btnLogin button {
+    width: 7em;
+    height: 3em;
+    background-color: rgb(23, 121, 23);
+    border: none;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.btnLogin button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
